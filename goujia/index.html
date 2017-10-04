@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--旧浏览器兼容-->
+		<meta http-equiv="renderer" content="webkit">
+    	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>构家</title>
+		<link rel="stylesheet" type="text/css" href="css/commom.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/time.js" type="text/javascript" charset="utf-8"></script>
+		<!--旧浏览器兼容HTML5-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	
+	</head>
+	<body>
+		<header class="header">
+			<div class="container clearfix">
+				<a class="logo"></a>
+				<nav>
+					<ul class="nav">
+						<li>
+							<a href="##" class="active">首页</a>					
+						</li>
+					    <li>
+					    	<a href="##">整体家装方案</a>
+					    	<div class="wrapper">
+					    		<ul>
+					    			<li><a href="##">G1</a></li>
+					    			<li><a href="##">G3</a></li>
+					    			<li><a href="##">G5</a></li>
+					    		</ul>
+					    	</div>
+					    </li>
+					    <li>
+					    	<a href="##">整体家装案例</a>
+					    	<div class="wrapper">
+					    		<ul>
+					    			<li><a href="##">合集</a></li>
+					    		</ul>
+					    	</div>
+					    </li>
+					    <li>
+					    	<a href="##" class="shop-nav">4S店</a>
+					    	<div class="wrapper">
+					    		<ul>
+					    			<li><a href="##">关于4S店</a></li>
+					    			<li><a href="##">4S店列表</a></li>
+					    		</ul>
+					    	</div></li>
+					    <li>
+					    	<a href="##" class="our-nav">关于我们</a>
+					        <div class="wrapper">
+					    		<ul>
+					    			<li><a href="##">了解构家</a></li>
+					    			<li><a href="##">工作机会</a></li>
+					    			<li><a href="##">加盟构家</a></li>
+					    			<li><a href="##">商务合作</a></li>
+					    		</ul>
+					    	</div>
+					    </li>
+					    <li><a href="##" class="bbs-nav">社区
+					    		<em class="hot-icon">	
+					    		</em>    
+					    	</a>
+					    </li>
+					    <li class="login-nav">
+					    	<a href="javascript:void(0)" class="login-link">登录</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section>
+			<div class="banner-one">
+				<img src="img/new_banner.png"/>
+				<div class="one-texts">
+					<a href="product.html" class="one-text">
+						G1系
+						<span>
+							￥1880/m²
+						</span>
+					</a>
+				    <a href="##" class="one-text">
+				    	G3系
+						<span>
+							￥2580/m²
+						</span>
+				    </a>	
+				</div>
+				
+			</div>
+			<div class="feature">
+				<p class="title" style="opacity: 0;">构家整体家装</p>
+				<div class="des" style="opacity: 0;">
+					构家为您提供一站式装修服务，包括硬装、设备、家具、软饰、家电。您不需要采购任何材料，
+                    <br />                               
+                                                   全程只需分阶段验收，满意为止。
+				</div>
+			</div>
+			<div class="video-slice clearfix">
+	            <div class="container" >
+					<video id="video" onclick="playMusic()">
+					    <source src="img/stopmotion.mp4" type="video/mp4">
+					</video >
+					<div class="play" id="playBtn" onclick="playMusic()"></div>
+					<div id="media-controler">
+	                    <div class="time-line">
+	                    	
+	                       <div class="progress" id="progress">
+	                        	<img src="img/time_line_orange.png" style="width: 1180px;">
+	                        </div>
+	                        <img src="img/time_line_black.png">
+	                    </div>
+	                    <div class="pins">
+	                        <a href="javascript:void(0)" id="p1" class="p p1 pass" onclick="playBtn(0)">
+	                        	<div class="img"></div>
+	                        	硬装
+	                        </a>
+	                        <a href="javascript:void(0)" id="p2" class="p p2" onclick="playBtn(20)">
+	                        	<div class="img"></div>
+	                        	设备
+	                        </a>
+	                        <a href="javascript:void(0)" id="p3" class="p p3" onclick="playBtn(40)">
+	                        	<div class="img"></div>
+	                        	家具
+	                        </a>
+	                        <a href="javascript:void(0)" id="p4" class="p p4" onclick="playBtn(60)">
+	                        	<div class="img"></div>
+	                        	软饰
+	                        </a>
+	                        <a href="javascript:void(0)" id="p5" class="p p5" onclick="playBtn(80)">
+	                        	<div class="img"></div>
+	                        	家电
+	                        </a>
+	                        <div id="p6" class="p p6" onclick="playBtn(100)">
+	                        	<div class="img"></div>
+	                        	整体家装
+	                        </div>
+	                    </div>
+	                </div>
+		        </div>
+	        </div>
+			<div class="convinient">
+				<img src="img/convinient.png" class="bg"/>
+				<img src="img/other-path.png" class="path"/>
+				<div class="point">
+					<span class="ripple1"></span>
+					<span class="ripple2"></span>
+					<span class="ripple3"></span>
+				</div>
+				<div class="content">
+					<h3 id="ctitle" class="title" style="opacity: 0;">
+						在构家您只需光临1次4S店
+						<br />
+						与1个构家顾问交流，全程无忧
+					</h3>
+					<div class="line" style="opacity: 0;">
+						
+					</div>
+					<div class="info" style="opacity: 0;">
+					传统装修，你至少要跑3趟装修公司，和设计师反复确认方案至少5次。跑2家建材城7次，和超过50家材料商家讨价还价。跑施工现场30次，行程超1000公里，前后至少耗时100天。最终还可能买贵、买错、买假，装修效果无任何保障。
+					</div>
+				</div>
+			</div>
+			<div class="standard design">
+				<div class="container clearfix">
+				<div class="mask"></div>
+				<div class="demo overlap">
+					<img class="line-art"src="img/standard-11.png" style="opacity: 0;" >
+					<img class="model" src="img/standard-01.png" style="opacity: 0;">
+				</div>
+				<div class="content">
+					<div class="hot-area">
+						<h3 class="title" style="opacity: 0;">
+							<small>IDI室内设计信息化 人性化功能设计</small>
+							<a class="link" href="##">整体家装设计标准</a>
+						</h3>
+						<div class="line" style="opacity: 0;"></div>
+						<div class="info" style="opacity: 0;">
+							构家的IDI室内设计信息化系统 通过国家863科技计划立项初审（立项名：智慧城市、动态构建、实时呈现）；该系统将设计系统按工业设计的思路将设计标准化、信息化、规模化；实时构建、动态呈现、自动预算、远程协同，完美的解决了传统家装中仅仅提供平面示意图，装修材料无法精确预算，造价不确定，装修效果无法得到保障等问题。
+						</div>
+					</div>
+					<a class="more-link" href="##" style="opacity: 0;" >了解更多</a>
+				</div>
+				<div class="v-line">
+					<div class="ln" style="opacity: 0;"></div>
+				</div>
+			</div>
+				<div class="h-line" style="opacity: 0;">
+					<div class="ln"></div>
+					<span class="idx">01</span>
+			    </div>
+			</div>
+			<div class="standard buy">
+				<div class="container clearfix">
+					<div class="mask" style="opacity: 0;"></div>
+					<div class="demo" style="opacity: 0;">
+						<img src="img/standard-02.png">
+					</div>
+					<div class="content">
+						<div class="hot-area">
+							<h3 class="title" style="opacity: 0;">
+								<small>精选一线品牌 千家合作商选材耐用环保</small>
+								<a class="link" href="##">整体家装选材标准</a>
+							</h3>
+							<div class="line" style="opacity: 0;"></div>
+							<div class="info" style="opacity: 0;">
+								构家拥有强大的供应链体系和严格的选材标准机制，所选用材以环保健康为基础标准，精选国内外一线品牌。采用集采模式，拿到最低供货价格，C2M工厂直供消费者，省去中间经销商环节；业主可享受更大的价格优惠和品质保证。
+							</div>
+						</div>
+						<a class="more-link" href="##" style="opacity: 0;">了解更多</a>
+					</div>
+					<div class="h-line" style="opacity: 0;" >
+						<span class="idx">02</span>
+						<div class="ln"></div>
+					</div>
+				</div>
+			</div>
+			<div class="standard construct">
+				<div class="container clearfix">
+					<div class="mask" style="opacity: 0;"></div>
+					<div class="demo" id="cdome" style="opacity: 0;">
+						<div class="layer ly1">
+							<img src="img/standard-03.png">
+							<div class="layer-info">
+								<em class="dot"></em><span class="text">多孔砖墙</span>
+							</div>
+						</div>
+						<div class="layer ly2">
+							<img src="img/standard-04.png">
+							<div class="layer-info">
+								<em class="dot"></em><span class="text">钢丝网片</span>
+							</div>
+						</div>
+						<div class="layer ly3">
+							<img src="img/standard-05.png">
+							<div class="layer-info">
+								<em class="dot"></em><span class="text">粉刷石膏</span>
+							</div>
+						</div>
+						<div class="layer ly4">
+							<img src="img/standard-06.png">
+							<div class="layer-info">
+								<em class="dot"></em><span class="text">找平腻子</span>
+							</div>
+						</div>
+						<div class="layer ly5">
+							<img src="img/standard-07.png">
+							<div class="layer-info">
+								<em class="dot"></em><span class="text">纤维丝网格布</span>
+							</div>
+						</div>
+						<div class="layer ly6">
+							<img src="img/standard-08.png">
+							<div class="layer-info">
+								<em class="dot"></em><span class="text">找平腻子</span>
+							</div>
+						</div>
+						<div class="layer ly7">
+							<img src="img/standard-09.png">
+							<div class="layer-info">
+								<em class="dot"></em><span class="text">清油</span>
+							</div>
+						</div>
+						<div class="layer ly8">
+							<img src="img/standard-10.png">
+							<div class="layer-info">
+								<em class="dot"></em><span class="text">墙纸</span>
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<div class="hot-area">
+							<h3 class="title" style="opacity: 0;">
+								<small>严苛的施工标准 300+图纸保障每一环节</small>
+								<a class="link" href="##">整体家装施工标准</a>
+							</h3>
+							<div class="line" style="opacity: 0;"></div>
+							<div class="info" style="opacity: 0;">
+								构家作为一家具有创造力和创新力的整体家装公司，在施工方面有着远超行业的施工标准和质量把控体系；创新的全投影放样、产业化工人、远超国标和行业的施工验收标准。并成为中国唯一一家获得“工匠楷模”国家级奖项的家装公司，努力为业主提供构家模式便捷和省心的全套家装服务。
+							</div>
+						</div>
+						<a class="more-link" href="##" style="opacity: 0;" >了解更多</a>
+					</div>
+					<div class="v-line">
+						<div class="ln" style="opacity: 0;"></div>
+					</div>
+				</div>
+				<div class="h-line" style="opacity: 0;">
+					<div class="ln"></div>
+					<span class="idx">03</span>
+				</div>
+		</div>
+			<div class="ensure">
+	        	<div class="pic1 active">
+	        		<img class="img1" src="img/goujia.png">
+	        	</div>
+	        	<div class="pic2 active">
+	        		<img class="img1" src="img/securit.png">
+	        	</div>
+	    		<div class="content">
+	        		<div class="container">
+						<h2>构家保障</h2>
+	                	<ul class="clearfix" >
+							<li class="one">
+								<a class="item" href="##">
+									<div class="imgwrap">
+										<img src="img/zero.png">
+									</div>
+									<div class="detailwrap">
+										<div class="title">
+											0增项
+										</div>
+										<div class="description">构家整体家装模式，&nbsp;装修的每一个环节都通过IDI系统精确计算，从源头杜绝装修增项。</div>
+										<div class="more">
+											<div class="more-arrow2"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="leftwrap two">
+								<a class="item" href="##">
+									<div class="imgwrap">
+										<img src="img/see.png">
+									</div>
+									<div class="detailwrap">
+										<div class="title">
+											所见即所得
+										</div>
+										<div class="description">
+											通过IDI呈现三维效果，全投影放样技术将图纸 1:1 画到墙上，&nbsp;精确施工。确保所见即所得。
+										</div>
+										<div class="more">
+											<div class="more-arrow2"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="leftwrap three">
+								<a class="item" href="##">
+									<div class="imgwrap">
+										<img src="img/pay.png">
+									</div>
+									<div class="detailwrap">
+										<div class="title">
+											购家宝
+										</div>
+										<div class="description">
+											购家宝由构家联合中国工商银行研发，实现“分期支付，节点验收”，为您的装修保驾护航。
+										</div>
+										<div class="more">
+											<div class="more-arrow2"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="leftwrap four last">
+								<a class="item" href="##">
+									<div class="imgwrap">
+										<img src="img/safe.png">
+									</div>
+									<div class="detailwrap">
+										<div class="title">
+											装修保险
+										</div>
+										<div class="description">
+											构家携手太平洋保险推出装修工期延误津贴险、装修防水险、不可抗力意外险。
+										</div>
+										<div class="more">
+											<div class="more-arrow2"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+	                	</ul>
+	        		</div>
+	    		</div>
+	    	</div>		
+			<div class="service container">	
+	    		<h2>构家服务</h2>
+	    		<ul class="clearfix">
+	    			<li class="leftwrap">
+	    				<a class="clearfix item" href="##">
+	        				<div class="imgwrap">
+	        					<img src="img/learn.jpg">
+	        				</div>
+	        				<div class="detailwrap">
+	                            <div class="title">
+	                    			讲座与学习
+	                        	</div>
+	                            <div class="description">
+	                    			构家特别开设“家装知识大讲堂”，这里有关于装修的一切，没有不知道，只有你想不到的装修知识。
+	                        	</div>
+	                            <div class="more-link">了解更多</div>						 
+	        				</div>
+	    				</a>
+	    			</li>
+	    			<li class="clearfix">
+	    				<a class="clearfix item" href="##">				
+	        				<div class="imgwrap">
+	        					<img src="img/vr.jpg">
+	        				</div>
+	        				<div class="detailwrap">
+	                            <div class="title">
+	                    			VR体验
+	                        	</div>
+	                            <div class="description">
+	                    			构家虚拟场景能让业主720°浏览装修效果。戴上VR眼镜，进行逼真的沉浸式体验，让你身临其境感受未来家。
+	                        	</div>
+	                            <div class="more-link">了解更多</div>			 
+	        				</div>	
+	    				</a>	
+	    			</li>	
+	    			<li class="leftwrap">
+						<a class="clearfix item" href="##">
+	        				<div class="imgwrap">
+	        					<img src="img/activity.jpg">
+	        				</div>
+	        				<div class="detailwrap">
+	                            <div class="title">
+	                    			青少年活动
+	                        	</div>
+	                            <div class="description">
+	                    			构家不止于装修，少年儿童是家的未来，构家希望通过小小的举动，推动社会对少年儿童的关注。
+	                        	</div>
+	                            <div class="more-link">了解更多</div>
+	        				</div>
+						</a>
+	    			</li>	
+	    			<li class="">
+						<a class="clearfix item" href="/serviceAndSecurity/loan">
+	        				<div class="imgwrap">
+	        					<img src="img/loan.jpg">
+	        				</div>
+	        				<div class="detailwrap">
+	                            <div class="title">
+	                    			装修贷款
+	                        	</div>
+	                            <div class="description">
+	                    			“星家贷”是构家携手复星小贷推出的装修分期业务，最低首付只需一成，即可轻松入住新家。
+	                        	</div>    
+	                            <div class="more-link">了解更多</div>
+	            			</div>	
+						</a>
+	    			</li>				
+	    		</ul>	
+	    	</div>
+			<div class="findProduct">
+	    		<img src="img/findProduct.jpg">
+	    		<div class="content">
+	                <div class="container">
+	                    <div class="description">
+	            			<p>在构家整体家装方案中挑选你最中意</p>
+	        				<p>的家装方案</p>						
+	                	</div>
+	                    <div class="choose">
+	            			<a href="##">点击前往</a>
+	                	</div>		
+	            	</div>
+	    		</div>
+	    	</div>
+		</section>
+		<footer class="footer">
+        <div class="container">
+            <div class="ft-nav clearfix">
+                <div class="ft-item">
+                    <h3 class="ft-title">构家4S店</h3>
+                    <ul>
+                        <li><a href="##">了解构家4S店</a></li>
+                        <li><a href="##">查找4S店</a></li>
+                        <li><a href="##">讲座与学习</a></li>
+                        <li><a href="##">青少年活动</a></li>
+                        <li><a href="##">购家宝</a></li>
+                        <li><a href="##">订单状态</a></li>
+                    </ul>
+                </div>
+                <div class="ft-item">
+                    <h3 class="ft-title">关于构家</h3>
+                    <ul>
+                        <li><a href="##">了解构家</a></li>
+                        <li><a href="##">发展历程</a></li>
+                        <li><a href="##">商学院</a></li>
+                        <li><a href="##">工作机会</a></li>
+                        <li><a href="##">加盟构家</a></li>
+                        <li><a href="##">商务合作</a></li>
+                    </ul>
+                </div>
+                <div class="ft-item">
+                    <h3 class="ft-title">关注构家</h3>
+                    <ul>
+                        <li>
+                            <div class="code">
+                                <a href="javascript:;">官方微博</a>
+                                <div class="code-box">
+                                    <img src="img/2d-weibo.png" alt="官方微博">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code">
+                                <a href="javascript:;">官方微信</a>
+                                <div class="code-box">
+                                    <img src="img/2d-webchat.png" alt="官方微信">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="code">
+                                <a href="javascript:;">APP下载</a>
+                                <div class="code-box">
+                                    <img src="img/2d-app.png" alt="APP下载">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ft-item">
+                    <h3 class="ft-title">客服电话</h3>
+                    <p class="hot-line">400-004-2222</p>
+                    <p>9:00-20:00</p>
+                </div>
+            </div>
+            <div class="copy-right">
+                <span>浙ICP备14021018号 / </span>
+                <a href="##" target="_blank">浙公网安备 33010802007629号</a>
+                <span>/ Powered by © 2014-2017 GouJiaWang.com</span>
+            </div>
+        </div>
+    </footer>
+	</body>
+</html>
